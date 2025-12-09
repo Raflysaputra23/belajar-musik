@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aida | Belajar Piano</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-hidden bg-cover bg-center">
+    <div
+      class="w-full bg-[url('/img/background-line.png')] min-h-screen flex items-center justify-center bg-black"
+    >
+      <div
+        class="relative w-full rounded-lg border-2 border-black shadow-black shadow-2xl aspect-video bg-[url('/img/bgAwal.png')] bg-cover bg-center flex flex-col items-center justify-center gap-[5%]"
+      >
+        <h1 data-aos="fade-down" data-aos-duration="1000"
+          class="neue-regular bg-[#828282]/50 text-center backdrop-blur-lg uppercase p-2 rounded-lg shadow-black shadow border-4 border-[#828282] px-6 max-w-3xl text-[clamp(1.8rem,5vw,4.2rem)]"
+        >
+          belajar piano bersama ai
+        </h1>
+        <button data-aos="fade-up" data-aos-duration="1500"
+          id="btn"
+          class="w-[13%] drop-shadow drop-shadow-black min-w-[60px] max-w-[120px] cursor-pointer focus:scale-100 hover:scale-105 transition-all"
+        >
+          <img src="/img/btnStart.png" class="w-full h-full" alt="Mulai" />
+        </button>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        handleMouseClick();
+
+        const timeout = setTimeout(() => {
+          window.location.href = "home.html";
+        }, 400);
+      });
+    </script>
+  </body>
+</html>

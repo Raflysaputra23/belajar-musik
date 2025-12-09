@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aida | Pendahuluan</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-hidden bg-cover bg-center">
+    <div
+      class="w-full bg-[url('/img/background-line.png')] h-screen lg:h-[calc(100vh-30px)] flex items-center justify-center bg-black"
+    >
+      <div
+        class="relative w-full rounded-lg border-2 border-black shadow-black shadow-2xl aspect-video bg-[url('/img/panduan.png')] bg-cover bg-center flex flex-col items-center gap-[5%]"
+      >
+        <button
+          id="btn"
+          class="w-[9%] hover:scale-110 active:scale-100 transition-all absolute left-[1%] top-[3%] lg:top-[7%] cursor-pointer"
+        >
+          <img
+            class="w-full h-full object-contain"
+            src="/img/btnBack.png"
+            alt=""
+          />
+        </button>
+       
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      const btn = document.getElementById("btn");
+      btn.addEventListener("click", () => {
+        handleMouseClick();
+
+        const timeout = setTimeout(() => {
+          window.location.href = "home.html";
+        }, 400);
+      });
+    </script>
+  </body>
+</html>

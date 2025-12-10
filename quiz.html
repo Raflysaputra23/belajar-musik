@@ -19,7 +19,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body
-    class="overflow-hidden bg-[url('/img/bgQuiz.png')] bg-cover bg-center h-screen"
+    class="overflow-hidden bg-[url('../img/bgQuiz.png')] bg-cover bg-center h-screen"
   >
     <div class="overflow-x-hidden overflow-y-auto w-full h-full relative">
       <button
@@ -28,7 +28,7 @@
       >
         <img
           class="w-full h-full object-contain"
-          src="/img/btnBack.png"
+          src="./img/btnBack.png"
           alt=""
         />
       </button>
@@ -202,7 +202,7 @@
           >
             Jika simbol ini dipartitur maka piano di mainkan secara...
           </h1>
-          <img src="/img/soal4.png" class="mx-auto rounded-lg mt-4" alt="" />
+          <img src="./img/soal4.png" class="mx-auto rounded-lg mt-4" alt="" />
         </div>
         <div
           class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-[95%] lg:w-[90%] p-5"
@@ -358,14 +358,14 @@
       });
 
       const soundCorrectAnswer = () => {
-        const audio = new Audio("/sound/correct.mp3");
+        const audio = new Audio("./sound/correct.mp3");
         audio.volume = 0.5;
         audio.currentTime = 0;
         audio.play();
       };
 
       const soundWrongAnswer = () => {
-        const audio = new Audio("/sound/wrong.mp3");
+        const audio = new Audio("./sound/wrong.mp3");
         audio.volume = 0.5;
         audio.currentTime = 0.5;
         audio.play();
@@ -406,7 +406,7 @@
         >
           <img
             class="w-full h-full object-contain"
-            src="/img/btnHome.png"
+            src="./img/btnHome.png"
             alt=""
           />
         </button>

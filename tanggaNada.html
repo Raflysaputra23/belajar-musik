@@ -23,10 +23,10 @@
   </head>
   <body class="overflow-hidden bg-cover bg-center">
     <div
-      class="w-full bg-[url('/img/background-line.png')] h-screen lg:h-[calc(100vh-30px)] flex items-center justify-center bg-black"
+      class="w-full bg-[url('../img/background-line.png')] h-screen lg:h-[calc(100vh-30px)] flex items-center justify-center bg-black"
     >
       <div
-        class="relative w-full rounded-lg border-2 border-black shadow-black shadow-2xl aspect-video bg-[url('/img/bgHome.png')] bg-cover bg-center flex flex-col items-center justify-center gap-[5%]"
+        class="relative w-full rounded-lg border-2 border-black shadow-black shadow-2xl aspect-video bg-[url('../img/bgHome.png')] bg-cover bg-center flex flex-col items-center justify-center gap-[5%]"
       >
         <button
           id="btn"
@@ -34,7 +34,7 @@
         >
           <img
             class="w-full h-full object-contain"
-            src="/img/btnHome.png"
+            src="./img/btnHome.png"
             alt=""
           />
         </button>
@@ -46,7 +46,7 @@
               id="btnKiri"
               class="w-[80%] hover:scale-105 p-2 lg:p-3 active:scale-100 transition-all cursor-pointer skew-3 bg-[#828282]/90 shadow-[-2px_2px_1px_0px_#000] rounded-2xl rounded-bl-4xl border-4 border-[#828282]"
             >
-              <img src="/img/leftHand.png" class="w-full h-full" alt="Mulai" />
+              <img src="./img/leftHand.png" class="w-full h-full" alt="Mulai" />
             </button>
             <p
               class="poppins-bold bg-[#828282] text-center shadow-[-2px_2px_1px_0px_#000] px-2 rounded-md rotate-3 text-white text-shadow-[-2px_2px_3px_#000] text-shadow-black text-[clamp(0.5rem,2vw,1.5rem)]"
@@ -59,7 +59,7 @@
               id="btnTengah"
               class="w-[80%] hover:scale-105 p-2 lg:p-3 active:scale-100 transition-all cursor-pointer skew-3 bg-[#828282]/90 shadow-[-2px_2px_1px_0px_#000] rounded-2xl rounded-bl-4xl border-4 border-[#828282]"
             >
-              <img src="/img/bothHand.png" class="w-full h-full" alt="Mulai" />
+              <img src="./img/bothHand.png" class="w-full h-full" alt="Mulai" />
             </button>
             <p
               class="poppins-bold bg-[#828282] text-center shadow-[-2px_2px_1px_0px_#000] px-2 rounded-md rotate-3 text-white text-shadow-[-2px_2px_3px_#000] text-shadow-black text-[clamp(0.5rem,2vw,1.5rem)]"
@@ -72,7 +72,7 @@
               id="btnKanan"
               class="w-[80%] hover:scale-105 p-2 lg:p-3 active:scale-100 transition-all cursor-pointer skew-3 bg-[#828282]/90 shadow-[-2px_2px_1px_0px_#000] rounded-2xl rounded-bl-4xl border-4 border-[#828282]"
             >
-              <img src="/img/leftHand.png" class="w-full h-full" alt="Mulai" />
+              <img src="./img/leftHand.png" class="w-full h-full" alt="Mulai" />
             </button>
             <p
               class="poppins-bold bg-[#828282] text-center shadow-[-2px_2px_1px_0px_#000] px-2 rounded-md rotate-3 text-white text-shadow-[-2px_2px_3px_#000] text-shadow-black text-[clamp(0.5rem,2vw,1.5rem)]"
@@ -91,7 +91,7 @@
             >
               <img
                 class="w-full h-full object-contain"
-                src="/img/btnBack.png"
+                src="./img/btnBack.png"
                 alt=""
               />
             </button>
@@ -105,10 +105,9 @@
               <video
                 id="player"
                 playsinline
-                data-poster="/path/to/poster.jpg"
                 class="aspect-video rounded-lg shadow border-2 border-[#828282]"
               >
-                <source src="/video/keduaTangan.MOV" type="video/mp4" />
+                <source src="./video/keduaTangan.MOV" type="video/mp4" />
               </video>
             </div>
           </div>
@@ -141,7 +140,7 @@
           type: "video",
           sources: [
             {
-              src: "/video/tanganKiri.mp4",
+              src: "./video/tanganKiri.mp4",
               type: "video/mp4",
             },
           ],
@@ -159,7 +158,7 @@
           type: "video",
           sources: [
             {
-              src: "/video/tanganKanan.mp4",
+              src: "./video/tanganKanan.mp4",
               type: "video/mp4",
             },
           ],
@@ -177,7 +176,7 @@
           type: "video",
           sources: [
             {
-              src: "/video/keduaTangan.mp4",
+              src: "./video/keduaTangan.mp4",
               type: "video/mp4",
             },
           ],

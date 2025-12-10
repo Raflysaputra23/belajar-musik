@@ -1,4 +1,4 @@
-const clickSound = new Audio("/sound/mouse-click.mp3");
+const clickSound = new Audio("./sound/mouse-click.mp3");
 AOS.init();
 
 
